@@ -4,5 +4,11 @@
 	<h1 class="titulo" >Intranet - Comunicação para todos !</h1>
 </div>
 
-<button><%= link_to "Produtos", products_path %></button>
+<ul>
+	<li><%= link_to "Produtos", products_path %></li>
+	<li><%= link_to "Login", new_user_session_path %></li>
+	<li><%= link_to "Sair", destroy_user_session_path, method: :delete %></li>
+	<li><%= link_to "Cadastrar", new_user_registration_path %></li>
+
+</ul>
 
