@@ -21,11 +21,13 @@
   </head>
 
   <body>
-
+<% if user_signed_in? %>
+	<script>location.href='site';</script>"
+<%	else %>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
-        <a class="navbar-brand bk_transparent" href="#">INTRANET</a>
+        <a class="navbar-brand bk_transparent" href="#">QUANTA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon "></span>
         </button>
@@ -36,12 +38,6 @@
             </li>
             <li class="nav-item">
               <a class="nav-link nav_i" href="#"> <%= link_to "Login", new_user_session_path %> </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav_i" href="#"> <%= link_to "Sair", destroy_user_session_path, method: :delete %> </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav_i" href="#"> <%= link_to "Pessoas", pessoas_path %> </a>
             </li>
           </ul>
         </div>
@@ -54,7 +50,7 @@
 		        <div class="intro-message">
 			        <h1>INTRANET</h1>
 			        <hr class="intro-divider">
-			        <h3>COMUNICAÇÃO COM TODOS OS SETORES</h3>
+			        <h3>COMUNICAÇÃO ENTRE TODOS OS SETORES</h3>
 			        <div class="container"> </div>
     </header>
     <!-- Footer -->
@@ -73,7 +69,7 @@
     <script src="jquery/jquery.min.js"></script>
     <script src="popper/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-
+	<% end %>
   </body>
 
 </html>
