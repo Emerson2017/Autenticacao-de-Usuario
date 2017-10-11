@@ -2,30 +2,110 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.top{
+/*edição geral e navegação*/
+
+.topo2{
 	  background: linear-gradient(to right, #fe8c00, #f83600); 
-
 }
-
-.sub-top{
+.sub-topo2{
 	background-color: #D3D3D3;
 	height:39px !important;
-
 }
-
-.sub-top div ul li a {
+.sub-topo2 div ul li a {
 	margin: 10px;
 	font-size:11px;
 	color: #696969 !important;
-
-
-
 }
-
-.sub-top div ul li a:hover{
+.sub-topo2 div ul li a:hover{
 	background-color: transparent !important;
 }
-
 nav div ul li .nav_i{
 	color: black !important;
 }
+
+
+/* conteúdo do site */
+
+.conteudo {
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+}
+
+.conteudo article{
+	margin: 3px;
+	width: 900px;
+	height:1200px;
+}
+
+.column1 ul{
+	margin-top: 30px;
+}
+
+.m_perfil{
+	background-color: #A52A2A;
+	color: black;
+	text-align: center;
+	width: 175px;
+	height: 35px;
+	border-radius: 10px 10px 0px 0px;;
+}
+.m_perfil h2{
+	font-size: 13px;
+	color:white;
+	margin-top: 7px;
+	padding: 5px;
+
+}
+.column1 ul li div {
+	text-align:left !important;
+}
+.lista_corpo{
+	width: 100px;
+	height: 130px;
+	text-decoration: none;
+	list-style: none;
+}
+.foto{
+	width:130px;
+	heigth:140px;
+
+}
+.ed_perfil{
+	text-align: right;
+}
+.ed_perfil a {
+	font-size: 9px;
+	color: #FF6347;
+}
+.ed_perfil a:hover{
+	background-color:transparent !important;
+	text-decoration:none;
+	color: #800000;
+}
+.container1{
+	width: 175px;
+	height:245px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	background-color: #C0C0C0;
+	border-radius: 10px;
+	border: 5px;
+}
+.nome_user{
+	font-size: 12px;
+	margin-top: 3px;
+}
+
+.descrition{
+	margin-top: 10px;
+	background-color: white;
+	width: 150px;
+	height: 193px;
+}
+
+.descrition_perfil{
+	padding: 10px;
+}
+
