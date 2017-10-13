@@ -17,7 +17,10 @@
 		<img src="imagens - site/quanta.gif">
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top topo2">
       <div class="container">
-        <a class="navbar-brand bk_transparent" href="#">INTRANET QUANTA</a>
+        <%= image_tag "imagens - site/quanta.gif" , class:"foto" %>
+        <div>
+        	<a class="navbar-brand bk_transparent" href="#">Intranet</a>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon "></span>
         </button>
@@ -40,32 +43,32 @@
 	    </ul>
 	    <ul class="navbar-nav"> 
 	    	<li class="nav-item"> 
-	    	<a class="nav-link n" href="#">Meu perfil</a>
+	    	<a class="nav-link n" href="meu_perfil">Meu perfil</a>
 	    	</li>
 	    </ul>
 	    <ul class="navbar-nav"> 
 	    	<li class="nav-item"> 
-	    	<a class="nav-link n" href="#">Meus contatos</a>
+	    	<a class="nav-link n" href="meus_contatos">Meus contatos</a>
 	    	</li>
 	    </ul>
 	    <ul class="navbar-nav"> 
 	    	<li class="nav-item"> 
-	    	<a class="nav-link n" href="#">Minhas atividades</a>
+	    	<a class="nav-link n" href="atividas">Minhas atividades</a>
 	    	</li>
 	    </ul>
 	    <ul class="navbar-nav"> 
 	    	<li class="nav-item"> 
-	    	<a class="nav-link n" href="#">Minhas comunidades</a>
+	    	<a class="nav-link n" href="comunidades">Minhas comunidades</a>
 	    	</li>
 	    </ul>
 	    <ul class="navbar-nav"> 
 	    	<li class="nav-item"> 
-	    	<a class="nav-link n" href="#">Meus fóruns</a>
+	    	<a class="nav-link n" href="foruns">Meus fóruns</a>
 	    	</li>
 	    </ul>
 	    <ul class="navbar-nav"> 
 	    	<li class="nav-item"> 
-	    	<a class="nav-link n" href="#">Meus calendários</a>
+	    	<a class="nav-link n" href="calendarios">Meus calendários</a>
 	    	</li>
 	    </ul>
 	  </div>
@@ -86,11 +89,11 @@
 
 	<!-- Corpo do site -->
 	<section class="conteudo">
-		<article class="column1">
-			<ul>
-				<li class="lista_corpo">
-					<div class="container1">
-						<div class="m_perfil">
+		<article class="column1 toper">
+			<ul class="lista1">
+				<li class="perfil box">
+					<div class="div_container container_perfil">
+						<div class="m_perfil div_title">
 							<h2>Meu Perfil</h2>
 						</div>
 						<div class="descrition">
@@ -99,24 +102,98 @@
 								<h2 class="nome_user">Emerson Rocha</h2>
 								<h3 class="ed_perfil"><a href="#">(Editar)</a></h3>
 							</div>
+						</div>
+					</div>
+				</li>
 
+				<li class="contatos box">
+					<div class="div_container container_contatos">
+						<div class="m_contatos div_title">
+							<h2>Meus Contatos</h2>
+						</div>
+
+						<div class="view_contatos">
 						</div>
 					</div>
 
 				</li>
 
+				<li class="calendario box">
+					<div class="div_container container_calendario">
+						<div class="m_calendario div_title">
+							<h2>Meu Calendário</h2>
+						</div>
+
+						<div class="view_calendario">
+						</div>
+					</div>
+
+				</li>
 
 			</ul>
-			
-
 		</article>
 
+		<article class="column2 toper">
+			<ul class="lista2">
+				<li class="box">
+					<div class="div_container container_atividades">
+						<div class="m_atividades div_title">
+							<h2>Mural de Atividades</h2>
+						</div>
+						<div class="view_atividades">
+							
+						</div>
+					</div>
+				</li>
+				<li class="box">
+					<div class="div_container container_m_atividades">
+						<div class="m_atividades div_title">
+							<h2>Minhas Atividades</h2>
+						</div>
+						<div class="view_atividades">
+							
+						</div>
+					</div>
+				</li>
+				<li class="box">
+					<div class="div_container container_noticias">
+						<div class="m_noticias div_title">
+							<h2>Notícias</h2>
+						</div>
+						<div class="view_noticias">
+							
+						</div>
+					</div>
+				</li>
+			</ul>
+		</article>
 
+		<article class="column3 toper">
+			<ul class="lista3">
+				<li class="box">
+					<div class="div_container container_comunidades">
+						<div class="m_comunidades div_title">
+							<h2>Minhas Comunidades</h2>
+						</div>
+						<div class="view_comunidades">
+							
+						</div>
+					</div>
+				</li>
+
+				<li class="box">
+					<div class="div_container container_comunidades">
+						<div class="m_comunidades div_title">
+							<h2>  Wikis e Blogs </h2>
+						</div>
+						<div class="view_comunidades">
+							
+						</div>
+					</div>
+				</li>
+			</ul>
+		</article>
 	</section>
-    
-
-
-
-
+   
 	</body>
 </html>

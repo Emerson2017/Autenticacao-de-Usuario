@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/*edição geral e navegação*/
+/*--------edição geral e navegação----------*/
 
 .topo2{
 	  background: linear-gradient(to right, #fe8c00, #f83600); 
@@ -18,58 +18,92 @@
 }
 
 .img_house{
-width: 25px;
-height:21px;
+	width: 25px;
+	height:21px;
 }
 .sub-topo2 div ul li a:hover{
-	background-color: transparent !important;
+	background-color: #C0C0C0 !important;
+	color: #000000 !important;
 }
 nav div ul li .nav_i{
 	color: black !important;
 }
 
+.container div {
+	margin-left: 6px !important;
+}
 
-/* conteúdo do site */
+/* -------GERAL DAS COLUNAS----------*/
 
 .conteudo {
 	display: flex;
-	flex-direction:column;
+	flex-direction:row;
 	align-items: center;
 }
 
-.conteudo article{
-	margin: 3px;
-	width: 900px;
-	height:1200px;
-}
-
-.column1 ul{
+.toper ul{
 	margin-top: 30px;
 }
 
-.m_perfil{
-	background-color: #A52A2A;
-	color: black;
-	text-align: center;
-	width: 175px;
+.div_title{
+	background-color: #A52A2A;	
+	border-radius: 10px 10px 0px 0px;
 	height: 35px;
-	border-radius: 10px 10px 0px 0px;;
 }
-.m_perfil h2{
+
+.div_title>h2 {
 	font-size: 13px;
 	color:white;
 	margin-top: 7px;
 	padding: 5px;
-
+	list-style:none;
 }
-.column1 ul li div {
+
+article ul li div {
 	text-align:left !important;
 }
-.lista_corpo{
-	width: 100px;
-	height: 130px;
+
+.box{
 	text-decoration: none;
 	list-style: none;
+}
+
+.div_container{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	background-color: #C0C0C0;
+	border-radius: 10px;
+	border: 5px;
+}
+
+
+
+/*---------COLUNA 1----------*/
+
+.conteudo article{
+	margin: 20px;
+}
+
+.lista1 li{
+	margin: 9px;
+}
+
+.conteudo .column1{
+	width: 210px;
+	height:1200px;
+}
+
+.m_perfil{
+	width: 175px;
+}
+
+.m_contatos{
+	width: 175px;	
+}
+.perfil{
+	width: 180px;
+	height: 245px;
 }
 .foto{
 	width:130px;
@@ -88,15 +122,10 @@ nav div ul li .nav_i{
 	text-decoration:none;
 	color: #800000;
 }
-.container1{
+
+.container_perfil{
 	width: 175px;
 	height:245px;
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	background-color: #C0C0C0;
-	border-radius: 10px;
-	border: 5px;
 }
 .nome_user{
 	font-size: 12px;
@@ -114,3 +143,121 @@ nav div ul li .nav_i{
 	padding: 10px;
 }
 
+.container_contatos{
+	width: 175px;
+	height:300px;
+
+}
+
+.view_contatos{
+	margin: 9px;
+	background-color: white;
+	width: 160px;
+	height: 250px;
+}
+
+.container_calendario{
+	width: 175px;
+	height:300px;
+}
+
+.view_calendario{
+	margin: 9px;
+	background-color: white;
+	width: 160px;
+	height: 250px;
+	
+}
+.m_calendario{
+	width: 175px;		
+}
+
+
+
+
+
+/*---------COLUNA 2----------*/
+
+
+.conteudo .column2{
+	width: 500px;
+	height: 1200px;
+}
+
+.m_atividades{
+	width: 500px;
+
+}
+
+.container_atividades{
+	height: 210px;
+	width:500px;
+
+}
+
+.view_atividades{
+	margin: 9px;
+	background-color: white;
+	width: 480px;
+	height: 150px;
+
+}
+
+.lista2 li{
+	margin: 9px;
+
+}
+
+.container_m_atividades{
+	height: 210px;
+	width:500px;
+
+}
+
+.container_noticias{
+	height: 300px;
+	width:500px;
+}
+
+.m_noticias{
+	width: 500px;
+
+}
+
+.view_noticias{
+	height: 280px;
+	margin: 9px;
+	background-color: white;
+	width: 480px;
+}
+
+/*---------COLUNA 3----------*/
+
+
+.conteudo .column3{
+	width: 300px;
+	height: 1200px;
+}
+
+.container_comunidades{
+	height: 350px;
+	width:200px;
+
+}
+
+.m_comunidades{
+	width: 200px;
+}
+
+.lista3 li{
+	magin-left: 5px;
+	margin: 9px;
+
+}
+
+.view_comunidades{
+	width: 180px;
+	height: 340px;
+	margin: 9px;
+	background-color: white;
+}
