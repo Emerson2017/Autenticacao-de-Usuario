@@ -11,7 +11,7 @@
 	background-color: #D3D3D3;
 	height:39px !important;
 }
-.sub-topo2 div ul li a {
+.nav_itens{
 	margin: 10px;
 	font-size:13px;
 	color: #696969 !important;
@@ -21,16 +21,26 @@
 	width: 25px;
 	height:21px;
 }
-.sub-topo2 div ul li a:hover{
+.nav_itens:hover{
 	background-color: #C0C0C0 !important;
 	color: #000000 !important;
 }
-nav div ul li .nav_i{
+
+.sair{
 	color: black !important;
+}
+
+.sair:hover{
+	background-color: transparent;
+	text-decoration: none;
 }
 
 .container div {
 	margin-left: 6px !important;
+}
+.foto{
+	width:130px;
+	heigth:140px;
 }
 
 /* -------GERAL DAS COLUNAS----------*/
@@ -105,11 +115,6 @@ article ul li div {
 	width: 180px;
 	height: 245px;
 }
-.foto{
-	width:130px;
-	heigth:140px;
-
-}
 .ed_perfil{
 	text-align: right;
 }
@@ -131,24 +136,19 @@ article ul li div {
 	font-size: 12px;
 	margin-top: 3px;
 }
-
 .descrition{
 	margin-top: 10px;
 	background-color: white;
 	width: 150px;
 	height: 193px;
 }
-
 .descrition_perfil{
 	padding: 10px;
 }
-
 .container_contatos{
 	width: 175px;
 	height:300px;
-
 }
-
 .view_contatos{
 	margin: 9px;
 	background-color: white;
@@ -166,15 +166,11 @@ article ul li div {
 	background-color: white;
 	width: 160px;
 	height: 250px;
-	
 }
+
 .m_calendario{
 	width: 175px;		
 }
-
-
-
-
 
 /*---------COLUNA 2----------*/
 
