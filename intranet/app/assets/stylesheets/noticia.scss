@@ -1,0 +1,39 @@
+// Place all the styles related to the noticia controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.page_center{
+	text-align: center;
+
+}
+
+.btn .new_notice{
+	color: black !important;
+	text-align: center !important;
+}
+
+.new_notice:hover{
+	background-color: transparent !important;
+	text-decoration: none;
+
+	
+}
+
+.form_notic{
+	text-align: center;
+}
+
+#noticium_titulo{
+	width: 300px;
+	border-radius: 6px;
+}
+
+#noticium_texto{
+	width: 300px;
+	height: 400px;
+	border-radius: 6px;
+}
+
+form{
+	margin: 30px;
+}

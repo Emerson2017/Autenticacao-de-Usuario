@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <h1 class="page_center">Notícias</h1>
+
+  <table class="table">
+    <thead class="thead-inverse">
+      <tr>
+        <th>Título da Notícia</th>
+        <th>Texto</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @noticia.each do |noticium| %>
+        <tr>
+          <td><%= noticium.titulo %></td>
+          <td><%= noticium.texto %></td>
+          <td><%= link_to 'Mostrar', noticium %></td>
+          <td><%= link_to 'Editar', edit_noticium_path(noticium) %></td>
+          <td><%= link_to 'Excluir', noticium, method: :delete, data: { confirm: 'Tem certeza que deseja EXCLUIR?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+ <button type="button" class="btn btn-outline-primary"> <%= link_to 'Nova Notícia', new_noticium_path,  class:"new_notice" %></button>
+
+ 
+

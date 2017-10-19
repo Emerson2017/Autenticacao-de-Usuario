@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  resources :pessoas
+  resources :noticia
   resources :site
   devise_for :users
-  resources :products
 
   
   get 'welcome/index'
