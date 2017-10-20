@@ -174,26 +174,26 @@
 						<div class="m_noticias div_title">
 							<h2>Notícias</h2>
 						</div>
-						<% @noticia.each do |noticia| %>
+						
 						<div class="view_noticias">
 							<div class="campo_noticias">
+							<% @noticia.each do |noticia| %>
 								<div class="noticias">
-									<div>
+									<div class="div_titulo">
 										<p class="titulo_not"><%= noticia.titulo %></p><br>
 									</div>
-									
-									<div>
-										<p class="texto_not"><%= link_to noticia.texto, noticia_path(noticia) %></p>
-									</div>
+
+									<div class="div_texto">
+										<p class="texto_not"><%= link_to noticia.texto, noticia_path(noticia) %> </p>
+									</div> 
 								</div>
 
 								<div class="i-noticia btn-group " role="group">
 									<button type="button" class="btn btn-default"><h3><%= link_to "Inserir Notícia", noticia_url, class:"inserir" %></h3></button>
 									</div>
+									<% end %>
 							</div>
-
 						</div>
-						 <% end %>
 					</div>
 				</li>
 			</ul>
