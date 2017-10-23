@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171019165249) do
+ActiveRecord::Schema.define(version: 20171023191024) do
+
+  create_table "mural_atividades", force: :cascade do |t|
+    t.string "atividade"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "noticia", force: :cascade do |t|
     t.string "titulo"

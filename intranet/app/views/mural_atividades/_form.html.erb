@@ -1,0 +1,22 @@
+<%= form_with(model: mural_atividade, local: true) do |form| %>
+  <% if mural_atividade.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mural_atividade.errors.count, "error") %> prohibited this mural_atividade from being saved:</h2>
+
+      <ul>
+      <% mural_atividade.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :atividade %>
+    <%= form.text_field :atividade, id: :mural_atividade_atividade %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -140,7 +140,15 @@
 							<h2>Mural de Atividades</h2>
 						</div>
 						<div class="view_atividades">
-							
+							<% @mural_atividades.each do |mural_atividades| %>
+							<div class="post-atividades">
+								<p class="postador"><%= current_user.email %></p>
+								<p class="postagem"><%= mural_atividades.atividade %></p>
+
+							</div>
+							<% end %>
+							<div class="i-atividade btn-group " role="group">
+								<button type="button" class="btn btn-outline-danger"><h3><%= link_to "Inserir Atividade", mural_atividades_url, class:"inserir" %></h3></button> </div>
 						</div>
 					</div>
 				</li>

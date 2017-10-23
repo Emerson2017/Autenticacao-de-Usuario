@@ -1,0 +1,2 @@
+class MuralAtividade < ApplicationRecord
+end

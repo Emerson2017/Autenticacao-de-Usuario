@@ -210,6 +210,7 @@ article ul li div {
 	background-color: white;
 	width: 480px;
 	height: 220px;
+	overflow:auto;
 
 }
 
@@ -239,12 +240,13 @@ article ul li div {
 	margin: 9px;
 	background-color: white;
 	width: 480px;
+	overflow:auto;
 }
 
 .i-noticia{
 	position: absolute !important;
 	top: 965px;
-	left: 340px;
+	left: 670px;
 }
 
 
@@ -260,6 +262,33 @@ article ul li div {
 	text-decoration: none;
 	color: white !important;
 	
+}
+
+.i-atividade .btn h3{
+height: 6px;
+font-size: 13px;
+
+}
+
+.i-atividade{
+	position: absolute !important;
+	top: 315px;
+	left: 660px;
+}
+
+.post-atividades{
+	padding: 10px;
+}
+
+.postador{
+	font-size: 12px;
+	color: #A52A2A;
+
+}
+
+.postagem{
+	font-size: 9px;
+	margin-left: 10px;
 }
 
 

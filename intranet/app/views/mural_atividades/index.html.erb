@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mural Atividades</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Atividade</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mural_atividades.each do |mural_atividade| %>
+      <tr>
+        <td><%= mural_atividade.atividade %></td>
+        <td><%= link_to 'Show', mural_atividade %></td>
+        <td><%= link_to 'Edit', edit_mural_atividade_path(mural_atividade) %></td>
+        <td><%= link_to 'Destroy', mural_atividade, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mural Atividade', new_mural_atividade_path %>
