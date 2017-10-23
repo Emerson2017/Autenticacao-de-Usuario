@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
     <!-- Custom fonts for this template -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -16,7 +16,6 @@
 
 	<body>
 		<!-- Navigation -->
-		<img src="imagens - site/quanta.gif">
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top topo2">
       <div class="container">
         <%= image_tag "imagens - site/quanta.gif" , class:"foto" %>
@@ -36,7 +35,7 @@
       </div>
     </nav>
 
-	<nav class="navbar navbar-expand-lg navbar-light sub-topo2">
+	<nav class="navbar navbar-expand-lg navbar-light sub-topo2" >
 	  <div class="collapse navbar-collapse" >
 	   <ul class="navbar-nav"> 
 	    	<li class="nav-item"> 
@@ -75,18 +74,6 @@
 	    </ul>
 	  </div>
 	  <div class="navbar navbar-header navbar-fixed-top">
-	<div class="container">
-	    <div class="navbar-collapse collapse">
-	        <div class="nav navbar-nav navbar-right">
-	            <form role="search" class="navbar-form">
-	                <div class="form-group has-feedback">
-	                    <input type="text" class="form-control" placeholder="Procurar" />
-	                    <span class="form-control-feedback glyphicon glyphicon-search"></span>
-	                </div>
-	            </form>
-	        </div>
-	    </div>
-	</div>
 	</nav>
 
 	<!-- Corpo do site -->
@@ -177,7 +164,7 @@
 						
 						<div class="view_noticias">
 							<div class="campo_noticias">
-							<% @noticia.each do |noticia| %>
+								<% @noticia.each do |noticia| %>
 								<div class="noticias">
 									<div class="div_titulo">
 										<p class="titulo_not"><%= noticia.titulo %></p><br>
@@ -187,11 +174,10 @@
 										<p class="texto_not"><%= link_to noticia.texto, noticia_path(noticia) %> </p>
 									</div> 
 								</div>
-
-								<div class="i-noticia btn-group " role="group">
-									<button type="button" class="btn btn-default"><h3><%= link_to "Inserir Notícia", noticia_url, class:"inserir" %></h3></button>
-									</div>
 									<% end %>
+									<div class="i-noticia btn-group " role="group">
+									<button type="button" class="btn btn-outline-danger"><h3><%= link_to "Inserir Notícia", noticia_url, class:"inserir" %></h3></button>
+									</div>
 							</div>
 						</div>
 					</div>
@@ -225,5 +211,10 @@
 			</ul>
 		</article>
 	</section>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
 	</body>
 </html>

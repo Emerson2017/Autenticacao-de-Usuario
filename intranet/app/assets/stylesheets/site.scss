@@ -10,6 +10,7 @@
 .sub-topo2{
 	background-color: #D3D3D3;
 	height:39px !important;
+	margin-top: 60px !important;
 }
 .nav_itens{
 	margin: 10px;
@@ -241,25 +242,26 @@ article ul li div {
 }
 
 .i-noticia{
-	position: absolute;
-	top: 940px;
-	left: 370px;
+	position: absolute !important;
+	top: 965px;
+	left: 340px;
 }
 
 
 .i-noticia .btn h3{
 	font-size: 15px;
 	color: black !important;
+	height: 10px;
+
 }
 
 .inserir:hover{
 	background-color: transparent !important;
 	text-decoration: none;
+	color: white !important;
 	
 }
-.inserir{	
-	color: #A52A2A !important;
-}
+
 
 .campo_noticias {
 	padding: 15px;
