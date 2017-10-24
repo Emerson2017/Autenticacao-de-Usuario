@@ -4,6 +4,7 @@ class SiteController < ApplicationController
 	def index
 		@noticia = Noticium.all
 		@mural_atividades = MuralAtividade.all
+		@minhas_atividades = MinhasAtividade.all
 	end
 
 	def show

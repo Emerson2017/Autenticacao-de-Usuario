@@ -310,7 +310,7 @@ font-size: 13px;
 }
 
 .texto_not{
-
+	 word-wrap: break-word;
 }
 
 .texto_not a{
@@ -327,6 +327,32 @@ font-size: 13px;
 	margin-left: 20px;
 }
 
+.table-atividades{
+	margin-top: 10px;
+	font-size: 11px;
+	color: #696969;
+}
+.thead-atividades{
+	width: 300px;
+}
+
+.td-atividade{
+	font-size: 11px;
+	color: #A52A2A;
+	 word-wrap: break-word;
+
+}
+
+.td-responsavel{
+	font-size:11px;
+	color: black;
+	 word-wrap: break-word;
+}
+
+.table-atividades thead{
+	background-color: #D3D3D3 !important;
+
+}
 
 /*---------COLUNA 3----------*/
 

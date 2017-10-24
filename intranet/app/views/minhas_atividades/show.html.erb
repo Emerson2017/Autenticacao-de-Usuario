@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Atividade:</strong>
+  <%= @minhas_atividade.atividade %>
+</p>
+
+<p>
+  <strong>Responsavel:</strong>
+  <%= @minhas_atividade.responsavel %>
+</p>
+
+<%= link_to 'Edit', edit_minhas_atividade_path(@minhas_atividade) %> |
+<%= link_to 'Back', minhas_atividades_path %>

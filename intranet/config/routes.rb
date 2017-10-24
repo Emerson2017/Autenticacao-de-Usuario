@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :minhas_atividades
   resources :mural_atividades
   resources :noticia
   resources :site

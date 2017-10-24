@@ -1,0 +1,27 @@
+<%= form_with(model: minhas_atividade, local: true) do |form| %>
+  <% if minhas_atividade.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(minhas_atividade.errors.count, "error") %> prohibited this minhas_atividade from being saved:</h2>
+
+      <ul>
+      <% minhas_atividade.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :atividade %>
+    <%= form.text_field :atividade, id: :minhas_atividade_atividade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :responsavel %>
+    <%= form.text_field :responsavel, id: :minhas_atividade_responsavel %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
