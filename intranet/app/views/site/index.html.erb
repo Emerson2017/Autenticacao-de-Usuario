@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/
+		bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszu
+		E4W1povHYgTpBfshb" crossorigin="anonymous">
 
-    <!-- Custom fonts for this template -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    <!-- Custom fonts for this template -->
+	    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,
-    700italic" rel="stylesheet" type="text/css">
+	    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,
+	    700italic" rel="stylesheet" type="text/css">
 
-    <!-- Custom styles for this template -->
-    <link href="css/landing-page.css" rel="stylesheet">
+	    <!-- Custom styles for this template -->
+	    <link href="css/landing-page.css" rel="stylesheet">
+
 		<title> INTRANET </title>
 	</head>
 
@@ -114,7 +117,6 @@
 							</div>
 						</div>
 					</div>
-
 				</li>
 
 				<li class="calendario box">
@@ -122,11 +124,9 @@
 						<div class="m_calendario div_title">
 							<h2>Meu Calendário</h2>
 						</div>
-
 						<div class="view_calendario">
 						</div>
 					</div>
-
 				</li>
 
 			</ul>
@@ -144,23 +144,27 @@
 							<div class="post-atividades">
 								<p class="postador"><%= current_user.email %></p>
 								<p class="postagem"><%= mural_atividades.atividade %></p>
-
 							</div>
 							<% end %>
-							<div class="i-atividade btn-group " role="group">
-								<button type="button" class="btn btn-outline-danger"><h3><%= link_to "Inserir Atividade", mural_atividades_url, class:"inserir" %></h3></button> </div>
+						</div>
+						<div class="btn1 btn-group" role="group">
+								<button type="button" class="btn btn-outline-danger">
+									<%= link_to "Postar Atividade", mural_atividades_url, 
+									class:"btn-crud" %>
+								</button> 
 						</div>
 					</div>
 				</li>
+
 				<li class="box">
 					<div class="div_container container_m_atividades">
 						<div class="m_atividades div_title">
 							<h2>Minhas Atividades</h2>
 						</div>
-						<div class="view_atividades">
+						<div class="view_m_atividades">
 							<div class="minhas-atividades">
 								<table class="table table-atividades">
-								    <thead class="thead-atividades">
+								    <thead class="thead-atividades ">
 								      <tr>
 								        <th>Atividade</th>
 								        <th>Responsável</th>
@@ -175,9 +179,11 @@
 								    </tbody>
 								    <% end %>
  								</table>
-
 							</div>
 						</div>
+						<div class="btn2 btn-group " role="group">
+								<button type="button" class="btn btn-outline-danger "><%= link_to "Gerenciar Atividades", minhas_atividades_url, class:"btn-crud" %></button> 
+							</div>
 					</div>
 				</li>
 				<li class="box">
@@ -199,10 +205,10 @@
 									</div> 
 								</div>
 									<% end %>
-									<div class="i-noticia btn-group " role="group">
-									<button type="button" class="btn btn-outline-danger"><h3><%= link_to "Inserir Notícia", noticia_url, class:"inserir" %></h3></button>
-									</div>
 							</div>
+						</div>
+						<div class="btn3 btn-group " role="group">
+							<button type="button" class="btn btn-outline-danger"><%= link_to "Postar Notícia", noticia_url, class:"btn-crud" %></h3></button>
 						</div>
 					</div>
 				</li>

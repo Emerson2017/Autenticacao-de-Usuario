@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :usuarios
+  resources :usuarios
   resources :minhas_atividades
   resources :mural_atividades
   resources :noticia
