@@ -26,6 +26,7 @@ class MuralAtividadesController < ApplicationController
   def create
     @mural_atividade = MuralAtividade.new(mural_atividade_params)
 
+
     respond_to do |format|
       if @mural_atividade.save
         format.html { redirect_to @mural_atividade, notice: 'Mural atividade was successfully created.' }

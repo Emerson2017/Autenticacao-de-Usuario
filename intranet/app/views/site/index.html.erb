@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/
-		bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszu
-		E4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
 	    <!-- Custom fonts for this template -->
 	    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -57,7 +55,7 @@
 	    </ul>
 	    <ul class="navbar-nav"> 
 	    	<li class="nav-item"> 
-	    	<a class="nav-link n nav_itens" href="atividas">Minhas atividades</a>
+	    	<a class="nav-link n nav_itens"><%= link_to "Minhas atividades", minhas_atividades_url %></a>
 	    	</li>
 	    </ul>
 	    <ul class="navbar-nav"> 
@@ -147,11 +145,10 @@
 							</div>
 							<% end %>
 						</div>
-						<div class="btn1 btn-group" role="group">
-								<button type="button" class="btn btn-outline-danger">
-									<%= link_to "Postar Atividade", mural_atividades_url, 
-									class:"btn-crud" %>
-								</button> 
+						<div class="btn1 btn-group">
+							<button type="button" class="btn btn-outline-danger ">
+								<%= link_to "Publicar Atividade", mural_atividades_url, class:"btn-crud" %>
+							</button> 
 						</div>
 					</div>
 				</li>
@@ -181,9 +178,11 @@
  								</table>
 							</div>
 						</div>
-						<div class="btn2 btn-group " role="group">
-								<button type="button" class="btn btn-outline-danger "><%= link_to "Gerenciar Atividades", minhas_atividades_url, class:"btn-crud" %></button> 
-							</div>
+						<div class="btn2 btn-group ">
+							<button type="button" class="btn btn-outline-danger ">
+								<%= link_to "Gerenciar Minhas Atividades", minhas_atividades_url, class:"btn-crud" %>
+							</button> 
+						</div>
 					</div>
 				</li>
 				<li class="box">
@@ -191,7 +190,6 @@
 						<div class="m_noticias div_title">
 							<h2>Notícias</h2>
 						</div>
-						
 						<div class="view_noticias">
 							<div class="campo_noticias">
 								<% @noticia.each do |noticia| %>
@@ -207,8 +205,9 @@
 									<% end %>
 							</div>
 						</div>
-						<div class="btn3 btn-group " role="group">
-							<button type="button" class="btn btn-outline-danger"><%= link_to "Postar Notícia", noticia_url, class:"btn-crud" %></h3></button>
+						<div class="btn3 btn-group ">
+							<button type="button" class="btn btn-outline-danger"><%= link_to "Postar Notícia", noticia_url, class:"btn-crud" %>
+							</button>
 						</div>
 					</div>
 				</li>
