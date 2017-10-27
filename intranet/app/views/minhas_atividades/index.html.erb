@@ -19,9 +19,9 @@
       <tr>
         <td><%= minhas_atividade.atividade %></td>
         <td><%= minhas_atividade.responsavel %></td>
-        <td><%= link_to 'Show', minhas_atividade, class:"btn btn-primary" %></td>
-        <td><%= link_to 'Edit', edit_minhas_atividade_path(minhas_atividade), class:"btn btn-success" %></td>
-        <td><%= link_to 'Destroy', minhas_atividade, method: :delete, class:"btn btn-danger", data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', minhas_atividade, class:"btn btn-primary" %></td>
+        <td><%= link_to 'Editar', edit_minhas_atividade_path(minhas_atividade), class:"btn btn-success" %></td>
+        <td><%= link_to 'Excluir', minhas_atividade, method: :delete, class:"btn btn-danger", data: { confirm: 'Tem certeza que deseja EXCLUIR ?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -29,5 +29,5 @@
 
 <br>
 
-<%= link_to 'Inserir Nova Atividade', new_minhas_atividade_path %>
+<%= link_to 'Inserir Nova Atividade', new_minhas_atividade_path, class:"btn btn-secondary button" %>
 </section>

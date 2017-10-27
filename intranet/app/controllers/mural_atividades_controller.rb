@@ -29,7 +29,7 @@ class MuralAtividadesController < ApplicationController
 
     respond_to do |format|
       if @mural_atividade.save
-        format.html { redirect_to @mural_atividade, notice: 'Mural atividade was successfully created.' }
+        format.html { redirect_to @mural_atividade, notice: 'Atividade Postada com Sucesso!' }
         format.json { render :show, status: :created, location: @mural_atividade }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class MuralAtividadesController < ApplicationController
   def update
     respond_to do |format|
       if @mural_atividade.update(mural_atividade_params)
-        format.html { redirect_to @mural_atividade, notice: 'Mural atividade was successfully updated.' }
+        format.html { redirect_to @mural_atividade, notice: 'Atividade Atualizada com sucesso!' }
         format.json { render :show, status: :ok, location: @mural_atividade }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class MuralAtividadesController < ApplicationController
   def destroy
     @mural_atividade.destroy
     respond_to do |format|
-      format.html { redirect_to mural_atividades_url, notice: 'Mural atividade was successfully destroyed.' }
+      format.html { redirect_to mural_atividades_url, notice: 'Atividade excluída com sucesso!' }
       format.json { head :no_content }
     end
   end
