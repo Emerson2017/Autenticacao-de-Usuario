@@ -1,3 +1,4 @@
+<section>
 <p id="notice"><%= notice %></p>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
@@ -18,9 +19,9 @@
       <tr>
         <td><%= minhas_atividade.atividade %></td>
         <td><%= minhas_atividade.responsavel %></td>
-        <td><%= link_to 'Show', minhas_atividade %></td>
-        <td><%= link_to 'Edit', edit_minhas_atividade_path(minhas_atividade) %></td>
-        <td><%= link_to 'Destroy', minhas_atividade, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', minhas_atividade, class:"btn btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_minhas_atividade_path(minhas_atividade), class:"btn btn-success" %></td>
+        <td><%= link_to 'Destroy', minhas_atividade, method: :delete, class:"btn btn-danger", data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +29,5 @@
 
 <br>
 
-<%= link_to 'New Minhas Atividade', new_minhas_atividade_path %>
+<%= link_to 'Inserir Nova Atividade', new_minhas_atividade_path %>
+</section>

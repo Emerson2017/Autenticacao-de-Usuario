@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
 <h1 class="center">Mural Atividades</h1>
 
 <table class="table">
@@ -14,9 +15,9 @@
     <% @mural_atividades.each do |mural_atividade| %>
       <tr>
         <td><%= mural_atividade.atividade %></td>
-        <td><%= link_to 'Mostrar', mural_atividade %></td>
-        <td><%= link_to 'Editar', edit_mural_atividade_path(mural_atividade) %></td>
-        <td><%= link_to 'Excluir', mural_atividade, method: :delete, data: { confirm: 'Tem certeza que deseja EXCLUIR ?' } %></td>
+        <td><%= link_to 'Mostrar', mural_atividade, class:"btn btn-primary" %></td>
+        <td><%= link_to 'Editar', edit_mural_atividade_path(mural_atividade), class:"btn btn-success" %></td>
+        <td><%= link_to 'Excluir', mural_atividade, method: :delete, class:"btn btn-danger",  data: { confirm: 'Tem certeza que deseja EXCLUIR ?' } %></td>
       </tr>
     <% end %>
   </tbody>
