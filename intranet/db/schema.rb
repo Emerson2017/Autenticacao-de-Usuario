@@ -32,21 +32,6 @@ ActiveRecord::Schema.define(version: 20171025172741) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "pessoas", force: :cascade do |t|
-    t.string "nome"
-    t.string "telefone"
-    t.string "endereco"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "products", force: :cascade do |t|
-    t.string "description"
-    t.integer "quantity"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "sites", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

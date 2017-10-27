@@ -4,6 +4,22 @@
 
 /*--------edição geral e navegação----------*/
 
+.btn-header{
+	height: 15px !important;
+	margin: 10px;
+	font-size:15px;
+	color: #696969 !important;
+
+}
+
+.btn-header:hover{
+	background-color: transparent !important;
+	text-decoration: none;
+	background-color: #C0C0C0 !important;
+	color: #000000 !important;
+
+}
+
 .topo2{
 	  background: linear-gradient(to right, #fe8c00, #f83600); 
 }
@@ -11,11 +27,6 @@
 	background-color: #D3D3D3;
 	height:39px !important;
 	margin-top: 60px !important;
-}
-.nav_itens{
-	margin: 10px;
-	font-size:13px;
-	color: #696969 !important;
 }
 
 .img_house{

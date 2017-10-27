@@ -28,12 +28,12 @@
       <% if @minimum_password_length %>
       <em>(<%= @minimum_password_length %> caracteres no mínimo)</em>
       <% end %><br />
-      <%= f.password_field :senha, autocomplete: "off", class:"senha" %>
+      <%= f.password_field :password, autocomplete: "off", class:"senha" %>
     </div>
 
     <div class="field">
       <%= f.label :confirmar_senha %><br />
-      <%= f.password_field :confirmar_senha, autocomplete: "off", class:"senha" %>
+      <%= f.password_field :confirm_password, autocomplete: "off", class:"senha" %>
     </div>
 
     <div class="actions">
