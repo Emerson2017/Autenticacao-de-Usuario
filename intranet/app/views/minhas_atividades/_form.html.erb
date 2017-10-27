@@ -23,6 +23,11 @@
     <%= form.text_field :responsavel, id: :minhas_atividade_responsavel %>
   </div>
 
+   <div class="field date">
+    <%= form.label :última_atualizacão %>
+    <%= form.date_select :atualizacao, id: :minhas_atividade_atualizacao %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

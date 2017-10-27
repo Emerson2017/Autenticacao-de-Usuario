@@ -10,6 +10,7 @@
     <tr>
       <th>Atividade</th>
       <th>Responsavel</th>
+      <th>Última Atualização</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,6 +20,8 @@
       <tr>
         <td><%= minhas_atividade.atividade %></td>
         <td><%= minhas_atividade.responsavel %></td>
+        <td><%= minhas_atividade.atualizacao %></td>
+
         <td><%= link_to 'Mostrar', minhas_atividade, class:"btn btn-primary" %></td>
         <td><%= link_to 'Editar', edit_minhas_atividade_path(minhas_atividade), class:"btn btn-success" %></td>
         <td><%= link_to 'Excluir', minhas_atividade, method: :delete, class:"btn btn-danger", data: { confirm: 'Tem certeza que deseja EXCLUIR ?' } %></td>
