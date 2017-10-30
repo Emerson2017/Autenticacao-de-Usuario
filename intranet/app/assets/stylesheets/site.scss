@@ -269,25 +269,21 @@ article ul li div {
 
 .btn1{
 	position: absolute !important;
+	top: 1900px !important;
+
 }
 
 
 .btn2{
 	position: absolute !important;
 	top: 655px;
-	left: 600px;
 	height: 30px;
-}
-
-.btn-crud:hover{
-	color: white !important;
 }
 
 
 .btn3{
 	position: absolute !important;
 	top: 1015px;
-	left: 680px;
 	height: 30px;
 }
 
@@ -299,6 +295,7 @@ article ul li div {
 .btn-crud:hover{
 	background-color: transparent !important;
 	text-decoration: none;
+	color: white !important;
 }
 
 .post-atividades{
@@ -313,6 +310,7 @@ article ul li div {
 .postagem{
 	font-size: 9px;
 	margin-left: 10px;
+	word-wrap: break-word;
 }
 
 .campo_noticias {
@@ -349,18 +347,20 @@ article ul li div {
 }
 
 .table-atividades{
-	margin-top: 10px;
+	margin-top: 4px;
+	width: 490px;
 	font-size: 11px;
 	color: #696969;
 }
 .thead-atividades{
-	width: 300px;
+	word-wrap: break-word !important;
 }
 
 .td-atividade{
 	font-size: 11px;
 	color: #A52A2A;
-	 word-wrap: break-word;
+	word-wrap: break-word;
+
 
 }
 
