@@ -194,22 +194,26 @@
 						<div class="view_noticias">
 							<div class="campo_noticias">
 								<% @noticia.each do |noticia| %>
-								<div class="noticias">
-									<div class="div_titulo">
-										<p class="titulo_not"><%= noticia.titulo %></p><br>
-									</div>
+									<div class="noticias">
+										<div class="div_titulo">
+											<p class="titulo_not"><%= noticia.titulo %></p><br>
+										</div>
 
-									<div class="div_texto">
-										<p class="texto_not"><%= link_to noticia.texto, noticia_path(noticia) %> </p>
-									</div> 
-								</div>
-									<% end %>
+										<div class="div_texto">
+											<p class="texto_not"><%= link_to noticia.texto, noticia_path(noticia) %> </p>
+										</div> 
+									</div>
+								<% end %>
 							</div>
 						</div>
-						<div class="btn3 btn-group ">
-							<button type="button" class="btn btn-outline-danger"><%= link_to "Postar Notícia", noticia_url, class:"btn-crud" %>
-							</button>
-						</div>
+						<% @noticia.each do |noticia| %>
+							<% if can? :create, noticia %>
+								<div class="btn3 btn-group ">
+									<button type="button" class="btn btn-outline-danger"><%= link_to "Postar Notícia", noticia_url, class:"btn-crud" %>
+									</button>
+								</div>
+							<% end %>
+						<% end %>
 					</div>
 				</li>
 			</ul>

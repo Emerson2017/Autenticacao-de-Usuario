@@ -2,10 +2,18 @@ class Ability
   include CanCan::Ability
 
   def initialize(user)
+
       if user.admin?
+
          can :manage, :all
+
        else
-         can :manage, :minhas_atividades
+
+         can :destroy, MuralAtividade do |mural_atividades|
+         	mural_atividades.user == user
+         end
+
+         can :read, Noticium
        end
 
   end
