@@ -24,7 +24,8 @@ class MuralAtividadesController < ApplicationController
   # POST /mural_atividades
   # POST /mural_atividades.json
   def create
-    @mural_atividade = MuralAtividade.new(mural_atividade_params)
+    @user = current_user
+    @mural_atividade = @user.mural_atividades.build(mural_atividade_params)
 
 
     respond_to do |format|

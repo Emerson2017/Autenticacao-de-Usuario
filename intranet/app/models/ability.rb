@@ -5,7 +5,7 @@ class Ability
       if user.admin?
          can :manage, :all
        else
-         can :read, usuarios
+         can :manage, :minhas_atividades
        end
 
   end
