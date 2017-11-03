@@ -29,7 +29,7 @@ class NoticiaController < ApplicationController
 
     respond_to do |format|
       if @noticium.save
-        format.html { redirect_to @noticium, notice: 'Noticium was successfully created.' }
+        format.html { redirect_to site_index_path, notice: 'Noticium was successfully created.' }
         format.json { render :show, status: :created, location: @noticium }
       else
         format.html { render :new }

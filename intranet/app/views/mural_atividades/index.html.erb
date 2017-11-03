@@ -22,8 +22,9 @@
         <td><%= mural_atividade.atividade %></td>
 
         <td><%= link_to 'Mostrar', mural_atividade, class:"btn btn-primary" %></td>
-
+      <% if can? :edit, mural_atividade %>
         <td><%= link_to 'Editar', edit_mural_atividade_path(mural_atividade), class:"btn btn-success" %></td>
+        <% end %>
         <% if can? :destroy, mural_atividade %>
           <td><%= link_to 'Excluir', mural_atividade, method: :delete, class:"btn btn-danger",  data: { confirm: 'Tem certeza que deseja EXCLUIR ?' } %></td>
         <% end %>

@@ -13,6 +13,10 @@ class Ability
          	mural_atividades.user == user
          end
 
+         can :edit, MuralAtividade do |mural_atividades|
+         	mural_atividades.user == user
+         end
+
          can :read, Noticium
        end
 
