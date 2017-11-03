@@ -28,7 +28,7 @@ class MinhasAtividadesController < ApplicationController
 
     respond_to do |format|
       if @minhas_atividade.save
-        format.html { redirect_to @minhas_atividade, notice: 'Minhas atividade was successfully created.' }
+        format.html { redirect_to site_index_path, notice: 'Minhas atividade was successfully created.' }
         format.json { render :show, status: :created, location: @minhas_atividade }
       else
         format.html { render :new }

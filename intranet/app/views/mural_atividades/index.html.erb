@@ -4,6 +4,10 @@
 
 <h1>Mural Atividades</h1>
 
+<button type="button" class="btn btn-secondary button"><%= link_to 'Nova Atividade', new_mural_atividade_path, class:"new_atividade" %></button>
+
+<button type="button" class="btn btn-secondary button"><%= link_to 'Voltar ao Site', site_index_path, class:"home" %></button>
+
 <table class="table">
   <thead class="thead-inverse">
     <tr>
@@ -28,7 +32,5 @@
   </tbody>
 </table>
 
-<br>
 
-<button type="button" class="btn btn-secondary button"><%= link_to 'Nova Atividade', new_mural_atividade_path, class:"new_atividade" %></button>
 </section>

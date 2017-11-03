@@ -5,13 +5,16 @@
 
 <h1>Minhas Atividades</h1>
 
+<button class="btn btn-secondary button"><%= link_to 'Inserir Atividade', new_minhas_atividade_path, class:"inserir-minha-atividade" %></button>
+
+<button type="button" class="btn btn-secondary button"><%= link_to 'Voltar ao Site', site_index_path, class:"home" %></button>
+
 <table class="table">
   <thead class="table-inverse">
     <tr>
       <th>Atividade</th>
-      <th>Responsavel</th>
-      <th>Última Atualização</th>
-      <th colspan="3"></th>
+      <th>Responsável</th>
+      <th colspan="4"></th>
     </tr>
   </thead>
 
@@ -30,7 +33,4 @@
   </tbody>
 </table>
 
-<br>
-
-<%= link_to 'Inserir Nova Atividade', new_minhas_atividade_path, class:"btn btn-secondary button" %>
 </section>

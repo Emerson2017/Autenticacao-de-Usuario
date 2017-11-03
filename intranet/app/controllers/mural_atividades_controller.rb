@@ -30,7 +30,7 @@ class MuralAtividadesController < ApplicationController
 
     respond_to do |format|
       if @mural_atividade.save
-        format.html { redirect_to @mural_atividade, notice: 'Atividade Postada com Sucesso!' }
+        format.html { redirect_to site_index_path, notice: 'Atividade Postada com Sucesso!' }
         format.json { render :show, status: :created, location: @mural_atividade }
       else
         format.html { render :new }
