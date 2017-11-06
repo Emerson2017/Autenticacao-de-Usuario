@@ -28,15 +28,10 @@ nav div .bk_transparent:hover{
 
 }
 
-.intro-header {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: center;
-  color: #f8f8f8;
-  background: url("imagens - site/transposicao.jpg") no-repeat center center;
-  background-size: cover;
-}
+.image{
+  height: 600px;
 
+}
 .intro-message {
   position: relative;
   padding-top: 20%;
@@ -67,25 +62,12 @@ nav div .bk_transparent:hover{
   .intro-message>h1 {
     font-size: 3em;
   }
-  ul.intro-social-buttons>li {
-    display: block;
-    margin-bottom: 20px;
-    padding: 0;
-  }
-  ul.intro-social-buttons>li:last-child {
-    margin-bottom: 0;
-  }
   .intro-divider {
     width: 100%;
   }
 }
 
-@media(max-width:1199px) {
-  ul.banner-social-buttons {
-    float: left;
-    margin-top: 15px;
-  }
-}
+ 
 
 @media(max-width:767px) {
   .banner h2 {
@@ -97,9 +79,6 @@ nav div .bk_transparent:hover{
     display: block;
     margin-bottom: 20px;
     padding: 0;
-  }
-  ul.banner-social-buttons>li:last-child {
-    margin-bottom: 0;
   }
 }
 

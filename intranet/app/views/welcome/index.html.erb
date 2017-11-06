@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
     <!-- Custom fonts for this template -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
@@ -45,15 +44,36 @@
     </nav>
 
     <!-- Header -->
-    <header class="intro-header">
-		    <div class="container">
-		      <div class="intro-message">
-			       <h1>INTRANET</h1>
-			       <hr class="intro-divider">
-			       <h3>COMUNICAÇÃO ENTRE TODOS OS SETORES</h3>
-           </div>
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <%= image_tag "imagens - site/transposicao.jpg" , class:"d-block w-100 image"%>
+          </div>
+          
+          <div class="carousel-item">
+          <%= image_tag "imagens - site/transposicao2.jpg" , class:"d-block w-100 image"%>
+          </div>
+
+          <div class="carousel-item">
+          <%= image_tag "imagens - site/transposicao3.jpg" , class:"d-block w-100 image"%>
+          </div>
         </div>
-    </header>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+  </a>
+</div>
     <!-- Footer -->
     <footer>
       <div class="container">
