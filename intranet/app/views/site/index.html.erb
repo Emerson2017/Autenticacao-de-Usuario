@@ -28,6 +28,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
+          <% if can? :manager, :all %>
+           <li class="nav-item">
+				<a class="nav-link nav_i" href="#"><%= link_to "Cadastrar Usuário", new_user_registration_path, class:"cadastrar" %></a>
+			</li>
+			<% end %>
             <li class="nav-item">
               <a class="nav-link" href="#"> <%= link_to "Sair", destroy_user_session_path, method: :delete, class:"sair" %> </a>
             </li>

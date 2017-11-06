@@ -21,7 +21,7 @@
 
   <body>
 <% if user_signed_in? %>
-	<script>location.href='site';</script>"
+	<script>location.href='site';</script>
 <%	else %>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg  navbar-light bg-light fixed-top topo1">
@@ -32,9 +32,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link nav_i" href="#"><%= link_to "Cadastrar", new_user_registration_path %></a>
-            </li>
             <li class="nav-item">
               <a class="nav-link nav_i" href="#"> <%= link_to "Login", new_user_session_path %> </a>
             </li>
