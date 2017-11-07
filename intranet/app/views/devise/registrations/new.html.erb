@@ -2,7 +2,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
   <style type="text/css">
+    body{
+
+    }
     .email{
+    width: 300px;
+    border-radius: 10px;
+  }
+  .username{
     width: 300px;
     border-radius: 10px;
   }
@@ -12,19 +19,19 @@
     }
 
   </style>
-
   <h2>Sign up</h2>
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= devise_error_messages! %>
 
     <div class="field">
-      <%= f.label :Nome_de_Usuário %><br />
-      <%= f.text_field :username, autofocus: true, class:"email" %>
+      <%= f.label :username %> <br/>
+      <%= f.text_field :username, autofocus: true, class:"username" %>
     </div>
 
+
     <div class="field">
-      <%= f.label :email %><br />
+      <%= f.label :email %><br/> 
       <%= f.email_field :email, autofocus: true, class:"email" %>
     </div>
 
@@ -32,7 +39,7 @@
       <%= f.label :senha %>
       <% if @minimum_password_length %>
       <em>(<%= @minimum_password_length %> caracteres no mínimo)</em>
-      <% end %><br />
+      <% end %><br/>
       <%= f.password_field :password, autocomplete: "off", class:"senha" %>
     </div>
 
@@ -42,9 +49,9 @@
     </div>
 
     <div class="actions">
-      <%= f.submit "Sign up", class:"btn" %>
+      <%= f.submit "Sign up", class:"btn btn-secondary" %>
     </div>
   <% end %>
 
-  <%= render "devise/shared/links" %>
+
 </section>

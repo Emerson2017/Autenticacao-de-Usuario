@@ -6,7 +6,7 @@ class Ability
       if user.admin?
         
          can :manage, :all
-
+         can :create, :User
        else
 
          can :destroy, MuralAtividade do |mural_atividades|
