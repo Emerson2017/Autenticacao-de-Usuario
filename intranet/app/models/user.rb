@@ -7,6 +7,7 @@ has_many :minhas_atividades
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-
+validates_presence_of :username
+validates_presence_of :confirm_password
 
 end

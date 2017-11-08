@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+<h1>Controle Acessos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @controle_acessos.each do |controle_acesso| %>
+      <tr>
+        <td><%= link_to 'Show', controle_acesso %></td>
+        <td><%= link_to 'Edit', edit_controle_acesso_path(controle_acesso) %></td>
+        <td><%= link_to 'Destroy', controle_acesso, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+ 
+
+
