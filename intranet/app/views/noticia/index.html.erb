@@ -13,7 +13,7 @@
     </thead>
 
     <tbody>
-<% @noticia.each do |noticium| %>
+    <% @noticia.each do |noticium| %>
         <tr>
           <td><%= noticium.titulo %></td>
           <td><%= noticium.texto %></td>
@@ -22,13 +22,14 @@
             <td><%= link_to 'Editar', edit_noticium_path(noticium) %></td>
             <td><%= link_to 'Excluir', noticium, method: :delete, data: { confirm: 'Tem certeza que deseja EXCLUIR?' } %></td>
           <% end %>
-<% end %>
+     <% end %>
         </tr>
     </tbody>
   </table>
 
+    <% if can? :manager, :all %>
       <button type="button" class="btn btn-outline-primary"> <%= link_to 'Nova Notícia', new_noticium_path,  class:"new_notice" %></button>
-
+    <% end %>
  
  </section>
 

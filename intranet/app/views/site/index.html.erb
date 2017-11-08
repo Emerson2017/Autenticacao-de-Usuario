@@ -28,8 +28,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-          <% if can? :manager, :all %>
-			<% end %>
+          <h7 class="name-user">Olá <%= current_user.username %> ! </h7>
             <li class="nav-item">
               <a class="nav-link" href="#"> <%= link_to "Sair", destroy_user_session_path, method: :delete, class:"sair" %> </a>
             </li>
@@ -75,6 +74,13 @@
 	    	<a class="nav-link n nav_itens"><%= link_to "Meus calendários", minhas_atividades_url, class:"btn-header" %></a>
 	    	</li>
 	    </ul>
+	    <% if can? :manager, :all %>
+	    <ul class="navbar-nav"> 
+	    	<li class="nav-item"> 
+	    	<a class="nav-link n nav_itens"><%= link_to "Controle de Acesso", minhas_atividades_url, class:"btn-header" %></a>
+	    	</li>
+	    </ul>
+	    <% end %>
 	  </div>
 	  <div class="navbar navbar-header navbar-fixed-top">
 	</nav>
@@ -208,13 +214,11 @@
 								<% end %>
 							</div>
 						</div>
-						<% @noticia.each do |noticia| %>
-							<% if can? :create, noticia %>
+							<% if can? :manager, :all %>
 								<div class="btn3 btn-group ">
 									<button type="button" class="btn btn-outline-danger"><%= link_to "Postar Notícia", noticia_url, class:"btn-crud" %>
 									</button>
 								</div>
-							<% end %>
 						<% end %>
 					</div>
 				</li>

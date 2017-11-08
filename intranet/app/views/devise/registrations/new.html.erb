@@ -18,21 +18,23 @@
       border-radius: 10px;
     }
 
+    .btn{
+      margin-top: 30px;
+    }
   </style>
   <h2>Sign up</h2>
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= devise_error_messages! %>
-
     <div class="field">
       <%= f.label :username %> <br/>
-      <%= f.text_field :username, autofocus: true, class:"username" %>
+      <%= f.text_field :username, autofocus: true, class:"username", placeholder:"Seu Nome" %>
     </div>
 
 
     <div class="field">
       <%= f.label :email %><br/> 
-      <%= f.email_field :email, autofocus: true, class:"email" %>
+      <%= f.email_field :email, autofocus: true, class:"email", placeholder:"you@exemplo.com" %>
     </div>
 
     <div class="field">
@@ -48,13 +50,13 @@
       <%= f.password_field :confirm_password, autocomplete: "off", class:"senha" %>
     </div>
 
-    <div>
+    <div class="dropdown">
      <%= f.label :Setor %><br />
-     <%= f.select :Setor, [['ADMINISTRATIVO'], ['RH'], ['TI']] %>
+     <%= f.select :Setor, [['Administrador'], ['TI'], ['Diretoria'], ['RH'], ['Comercial'], ['Técnico'], ['Financeiro'], ['Visitante']] %>
     </div>
 
     <div class="actions">
-      <%= f.submit "Sign up", class:"btn btn-secondary" %>
+      <%= f.submit "Sign up", class:"btn btn-secondary"%>
     </div>
   <% end %>
 
