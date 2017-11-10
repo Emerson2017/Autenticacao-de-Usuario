@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   resources :noticia
   resources :site
   devise_for :users
+  
+
+
 
   
   get 'welcome/index'

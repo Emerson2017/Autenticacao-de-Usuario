@@ -5,7 +5,7 @@ class ControleAcessosController < ApplicationController
   # GET /controle_acessos.json
   def index
     @controle_acessos = ControleAcesso.all
-    @users = User.all
+    @users = User.order(:id)
 
   end
 
