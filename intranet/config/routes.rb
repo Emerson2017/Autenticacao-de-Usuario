@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
 
   ActiveAdmin.routes(self)
-  devise_for :admin_users
   resources :controle_acessos
   resources :minhas_atividades
   resources :mural_atividades
   resources :noticia
   resources :site
   devise_for :users
+  devise_for :admin_users
   
 
 

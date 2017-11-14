@@ -7,15 +7,16 @@
 .btn-header{
 	height: 15px !important;
 	margin: 10px;
-	font-size:15px;
+	font-size:12px;
 	color: #696969 !important;
+	text-decoration: none !important;
 
 }
 
 .btn-header:hover{
 	background-color: transparent !important;
 	text-decoration: none;
-	background-color: #C0C0C0 !important;
+	background-color: transparent !important;
 	color: #000000 !important;
 
 }
@@ -311,6 +312,7 @@ article ul li div {
 .btn-crud{
 	color: black !important;
 	font-size: 12px;
+	text-decoration: none !important;
 }
 
 .btn-crud:hover{
@@ -373,7 +375,7 @@ article ul li div {
 	margin-top: 4px;
 	width: 490px;
 	font-size: 11px;
-	color: #696969;
+	color: #696969 !important;
 }
 .thead-atividades{
 	word-wrap: break-word !important;

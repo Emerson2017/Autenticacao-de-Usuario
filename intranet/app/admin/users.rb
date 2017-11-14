@@ -1,6 +1,16 @@
 ActiveAdmin.register User do
 	  permit_params [:email, :password, :password_confirmation, :username, :Setor, :admin] 
 
+	index do
+		column :username
+		column :email
+		column :Setor
+    column :admin
+		actions
+	end
+
+
+
  form do |f|
       f.inputs "User" do
       	f.input :username, :label => 'Nome de Usuário'
