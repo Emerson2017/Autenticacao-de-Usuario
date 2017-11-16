@@ -123,7 +123,7 @@
 					</div>
 				</li>
 				<% end %>
-
+				<% if can? :create, MinhasAtividade %>
 				<li class="calendario box">
 					<div class="div_container container_calendario">
 						<div class="m_calendario div_title">
@@ -133,6 +133,7 @@
 						</div>
 					</div>
 				</li>
+				<% end %>
 
 			</ul>
 		</article>
@@ -214,7 +215,7 @@
 								<% end %>
 							</div>
 						</div>
-							<% if can? :manager, :all %>
+							<% if can? :manage, Noticium %>
 								<div class="btn3 btn-group ">
 									<button type="button" class="btn btn-outline-danger"><%= link_to "Postar Notícia", noticia_url, class:"btn-crud" %>
 									</button>
