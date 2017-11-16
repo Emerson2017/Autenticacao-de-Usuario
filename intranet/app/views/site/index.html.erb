@@ -20,9 +20,6 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top topo2">
       <div class="container">
         <%= image_tag "imagens - site/logo-quanta.png" , class:"foto" %>
-        <div>
-        	<a class="navbar-brand bk_transparent" href="#">Intranet</a>
-        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon "></span>
         </button>
@@ -36,7 +33,7 @@
         </div>
       </div>
     </nav>
-
+    <% if can? :create, MinhasAtividade %>
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top sub-topo2" >
 	  <div class="collapse navbar-collapse" >
 	   <ul class="navbar-nav"> 
@@ -84,6 +81,7 @@
 	  </div>
 	  <div class="navbar navbar-header navbar-fixed-top">
 	</nav>
+	<% end %>
 
 	<!-- Corpo do site -->
 	<section class="conteudo">
@@ -103,7 +101,7 @@
 						</div>
 					</div>
 				</li>
-
+				<% if can? :create, MinhasAtividade %>
 				<li class="contatos box">
 					<div class="div_container container_contatos">
 						<div class="m_contatos div_title">
@@ -124,6 +122,7 @@
 						</div>
 					</div>
 				</li>
+				<% end %>
 
 				<li class="calendario box">
 					<div class="div_container container_calendario">
@@ -160,7 +159,7 @@
 						</div>
 					</div>
 				</li>
-
+				<% if can? :create, MinhasAtividade %>
 				<li class="box">
 					<div class="div_container container_m_atividades">
 						<div class="m_atividades div_title">
@@ -193,6 +192,7 @@
 						</div>
 					</div>
 				</li>
+				<% end %>
 
 				<li class="box">
 					<div class="div_container container_noticias">
@@ -227,6 +227,7 @@
 
 		<article class="column3 toper">
 			<ul class="lista3">
+				<% if can? :create, MinhasAtividade %>
 				<li class="box">
 					<div class="div_container container_comunidades">
 						<div class="m_comunidades div_title">
@@ -237,6 +238,7 @@
 						</div>
 					</div>
 				</li>
+				<% end %>
 
 				<li class="box">
 					<div class="div_container container_comunidades">

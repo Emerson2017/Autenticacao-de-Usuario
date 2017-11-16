@@ -19,7 +19,7 @@ ActiveAdmin.register User do
         f.input :password_confirmation, :label => 'Confirmar Senha'
         f.input :admin, :label => 'Administrador ?'
         f.select :Setor, :selecione =>  ['Administrador', 'RH', 'Colaborador', 'Comercial', 
-        	'Técnico', 'Financeiro', 'Diretoria' ]
+        	'Técnico', 'Financeiro', 'Diretoria', 'Visitante']
       end
       f.actions
     end

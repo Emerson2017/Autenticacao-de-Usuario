@@ -17,5 +17,17 @@ class ApplicationController < ActionController::Base
     redirect_to root_url
   end
 
+  rescue_from CanCan::AccessDenied do |e|
+        redirect_to new_user_session_path, alert: e.message
+      end
+
+   def redirect_user
+    if current_user.Setor == 'Administrador'
+      redirect_to site_index_path
+    else
+      redirect_to controle_acessos_path
+    end
+  end
+
 
 end
