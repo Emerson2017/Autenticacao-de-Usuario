@@ -11,6 +11,9 @@ class Ability
           can :read, Noticium
           cannot :access, :MinhasAtividade
           can :read, Noticium
+
+      elsif user.Setor == "Colaborador"
+        can :create, Noticium
           
 
       elsif user.Setor == "RH" or "Técnico" or  "Financeiro" or "Diretoria" or "Comercial"
@@ -25,9 +28,6 @@ class Ability
          end
 
          can :read, Noticium
-
-      elsif user.Setor == "Colaborador"
-        can :manage, Noticium
 
         
       end

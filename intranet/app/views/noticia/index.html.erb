@@ -27,7 +27,7 @@
     </tbody>
   </table>
 
-    <% if can? :manager, :all %>
+    <% if can? :create, Noticium %>
       <button type="button" class="btn btn-outline-primary"> <%= link_to 'Nova Notícia', new_noticium_path,  class:"new_notice" %></button>
     <% end %>
  

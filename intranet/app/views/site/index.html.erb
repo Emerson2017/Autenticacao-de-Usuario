@@ -87,6 +87,7 @@
 	<section class="conteudo">
 		<article class="column1 toper">
 			<ul class="lista1">
+			<% if can? :create, MinhasAtividade %>
 				<li class="perfil box">
 					<div class="div_container container_perfil">
 						<div class="m_perfil div_title">
@@ -101,6 +102,7 @@
 						</div>
 					</div>
 				</li>
+				<% end %>
 				<% if can? :create, MinhasAtividade %>
 				<li class="contatos box">
 					<div class="div_container container_contatos">
@@ -160,7 +162,6 @@
 						</div>
 					</div>
 				</li>
-				<% if can? :create, MinhasAtividade %>
 				<li class="box">
 					<div class="div_container container_m_atividades">
 						<div class="m_atividades div_title">
@@ -168,6 +169,7 @@
 						</div>
 						<div class="view_m_atividades">
 							<div class="minhas-atividades">
+							<% if can? :create, MinhasAtividade %>
 								<table class="table-atividades table">
 								    <thead>
 								      <tr>
@@ -191,9 +193,9 @@
 								<%= link_to "Gerenciar Minhas Atividades", minhas_atividades_url, class:"btn-crud" %>
 							</button> 
 						</div>
+						<% end %>
 					</div>
 				</li>
-				<% end %>
 
 				<li class="box">
 					<div class="div_container container_noticias">
@@ -215,7 +217,7 @@
 								<% end %>
 							</div>
 						</div>
-							<% if can? :manage, Noticium %>
+							<% if can? :create, Noticium %>
 								<div class="btn3 btn-group ">
 									<button type="button" class="btn btn-outline-danger"><%= link_to "Postar Notícia", noticia_url, class:"btn-crud" %>
 									</button>
@@ -228,8 +230,8 @@
 
 		<article class="column3 toper">
 			<ul class="lista3">
-				<% if can? :create, MinhasAtividade %>
 				<li class="box">
+				<% if can? :create, MinhasAtividade %>
 					<div class="div_container container_comunidades">
 						<div class="m_comunidades div_title">
 							<h2>Minhas Comunidades</h2>
@@ -238,8 +240,8 @@
 							
 						</div>
 					</div>
+					<% end %>
 				</li>
-				<% end %>
 
 				<li class="box">
 					<div class="div_container container_comunidades">
