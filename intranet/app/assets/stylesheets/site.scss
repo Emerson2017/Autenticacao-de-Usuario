@@ -356,11 +356,19 @@ article ul li div {
 
 .texto_not{
 	 word-wrap: break-word;
+
 }
 
 .texto_not a{
 	font-size: 10px;
 	color: #696969;
+	text-decoration: none !important;
+}
+.texto_not a:hover{
+
+background-color: transparent !important;
+color: #008B8B;
+
 }
 
 .div_titulo{

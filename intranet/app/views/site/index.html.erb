@@ -33,7 +33,6 @@
         </div>
       </div>
     </nav>
-    <% if can? :create, MinhasAtividade %>
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top sub-topo2" >
 	  <div class="collapse navbar-collapse" >
 	   <ul class="navbar-nav"> 
@@ -41,11 +40,14 @@
 	    	<a class="nav-link n nav_itens" href="#"> <%= image_tag "imagens - site/house.png" , class:"img_house" %> </a>
 	    	</li>
 	    </ul>
+      <% if can? :create, Noticium %>
 	    <ul class="navbar-nav"> 
 	    	<li class="nav-item"> 
 	    	<a class="nav-link n nav_itens"><%= link_to "Meu perfil", minhas_atividades_url, class:"btn-header" %></a>
 	    	</li>
 	    </ul>
+	    <% end %>
+	  <% if can? :create, MinhasAtividade %>
 	    <ul class="navbar-nav"> 
 	    	<li class="nav-item"> 
 	    	<a class="nav-link n nav_itens"><%= link_to "Meus contatos", minhas_atividades_url, class:"btn-header" %></a>
@@ -78,10 +80,10 @@
 	    	</li>
 	    </ul>
 	    <% end %>
+	    <% end %>
 	  </div>
 	  <div class="navbar navbar-header navbar-fixed-top">
 	</nav>
-	<% end %>
 
 	<!-- Corpo do site -->
 	<section class="conteudo">
@@ -162,6 +164,7 @@
 						</div>
 					</div>
 				</li>
+				<% if can? :create, MinhasAtividade %>
 				<li class="box">
 					<div class="div_container container_m_atividades">
 						<div class="m_atividades div_title">
@@ -196,6 +199,7 @@
 						<% end %>
 					</div>
 				</li>
+				<% end %>
 
 				<li class="box">
 					<div class="div_container container_noticias">
