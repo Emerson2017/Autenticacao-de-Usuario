@@ -1,13 +1,27 @@
 ActiveAdmin.register ControleAcesso do
-	before_action :set_usuarios, only: [:show, :edit, :update, :destroy]
-	permit_params [:user]
+	permit_params [:grupo]
 
-	def usuarios(user)
 		index do
-			column :users.all
-			actions
-		end 
-
+		column :grupo
+		actions
 	end
+
+
+	
+	 form do |f|
+      f.inputs "ControleAcesso" do
+      	 f.input :grupo, :label => 'Registrar Novo Grupo'
+      	 hr
+         f.input :Minhas_Atividades, as: :check_boxes, :collection => ['Criar', 'Visualizar', 'Editar', 'Deletar']
+  		hr
+  		 f.input :Mural_Atividades, as: :check_boxes, :collection => ['Criar', 'Visualizar', 'Editar', 'Deletar']
+  		hr
+  		f.input :Meu_Perfil, as: :check_boxes, :collection => ['Criar', 'Visualizar', 'Editar', 'Deletar']
+  		hr
+  		f.input :Noticias, as: :check_boxes, :collection => ['Criar', 'Visualizar', 'Editar', 'Deletar']
+  		end
+
+  		f.actions
+    end
 
 end
