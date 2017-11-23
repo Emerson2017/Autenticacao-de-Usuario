@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   resources :noticia
   resources :site
   devise_for :users
-  devise_for :admin_users
   
 
 
