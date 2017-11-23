@@ -1,5 +1,13 @@
 ActiveAdmin.register ControleAcesso do
-	permit_params [:grupo]
+	permit_params [:grupo, :Noticium]
+
+  controller do
+    def import
+      @noticia = Noticium.all
+      @mural_atividades = MuralAtividade.all
+      @minhas_atividades = MinhasAtividade.all
+    end
+  end
 
 		index do
 		column :grupo
@@ -12,9 +20,6 @@ ActiveAdmin.register ControleAcesso do
     f.inputs "ControleAcesso" do
            f.input :grupo, :label => 'Nome do Grupo'
         end
-
-
-
 
      tabs do 
       tab "Minhas Atividades" do
@@ -37,7 +42,7 @@ ActiveAdmin.register ControleAcesso do
 
         tab "Notícias" do
           f.inputs "Noticias" do
-    		  f.input :Noticias, as: :check_boxes, :collection => ['Criar', 'Visualizar', 'Editar', 'Deletar'], :label => 'Notícias'
+    		  f.input :Noticium, as: :check_boxes, :collection => ['Criar', 'Visualizar', 'Editar', 'Deletar'], :label => 'Notícias'
           end
         end
       end
