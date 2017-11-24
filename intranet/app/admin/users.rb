@@ -20,7 +20,7 @@ ActiveAdmin.register User do
         f.input :Setor, as: :select, :collection => ['Administrador', 'RH', 'Colaborador', 'Comercial', 
         	'Técnico', 'Financeiro', 'Diretoria', 'Visitante']
         f.input :filial, as: :select, :collection => ['Rio De Janeiro, RJ', 'Manaus, AM', 'Vitória, ES']
-        f.input :nascimento, :as => :date_picker 
+        f.input :nascimento, :as => :date_picker, date_picker_options: {dateFormat: 'dd/mm/yy'}
       end
       f.actions
     end

@@ -1,8 +1,11 @@
 ActiveAdmin.register ControleAcesso do
 	permit_params [:grupo, :Noticium]
 
+
+
+
   controller do
-    def import
+    def i
       @noticia = Noticium.all
       @mural_atividades = MuralAtividade.all
       @minhas_atividades = MinhasAtividade.all
@@ -17,7 +20,7 @@ ActiveAdmin.register ControleAcesso do
 
 	
 	 form do |f|
-    f.inputs "ControleAcesso" do
+    f.inputs "Controle de Acesso" do
            f.input :grupo, :label => 'Nome do Grupo'
         end
 
