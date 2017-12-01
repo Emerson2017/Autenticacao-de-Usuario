@@ -7,17 +7,17 @@ class Ability
          can :manage, :all
 
       elsif user.Setor == "Visitante"
-        if ControleAcesso.noticia.criar?
-          can :create, Noticium
-        end
-        if ControleAcesso.noticia.editar?
-          can :update, Noticium
-        end
-        if ControleAcesso.noticia.excluir?
-          can :destroy, Noticium
-        end
-        if ControleAcesso.noticia.ler?
-          can :read, Noticium
+        #if ControleAcesso.noticia.criar?
+          #can :create, Noticium
+        #end
+        #if ControleAcesso.noticia.editar?
+         # can :update, Noticium
+        #end
+        #if ControleAcesso.noticia.excluir?
+         # can :destroy, Noticium
+        #end
+        #if ControleAcesso.noticia.ler?
+         # can :read, Noticium
 
       elsif user.Setor == "Colaborador"
         can :create, Noticium
@@ -41,5 +41,5 @@ class Ability
         
       end
     end
-  end
+ # end
 end

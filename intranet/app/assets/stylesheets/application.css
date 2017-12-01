@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+#user_current_password{
+	width: 500px !important;
+}
+
+#user_password_confirmation{
+	width: 500px !important;
+}
+
+.upload{
+	font-size:12px;
+	padding: 20px;
+}

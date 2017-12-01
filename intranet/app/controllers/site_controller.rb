@@ -5,7 +5,7 @@ class SiteController < ApplicationController
 		@noticia = Noticium.all
 		@mural_atividades = MuralAtividade.all
 		@minhas_atividades = MinhasAtividade.all
-		@user = User.all
+		@user = User.new
 	end
 
 	def show

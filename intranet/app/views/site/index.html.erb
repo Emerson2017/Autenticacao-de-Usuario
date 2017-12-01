@@ -25,7 +25,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-          <h7 class="name-user">Olá <%= current_user.username %> ! </h7>
             <li class="nav-item">
               <a class="nav-link" href="#"> <%= link_to "Sair", destroy_user_session_path, method: :delete, class:"sair" %> </a>
             </li>
@@ -97,9 +96,9 @@
 						</div>
 						<div class="descrition">
 							<div class="descrition_perfil">
-										<%= image_tag current_user.image_url.to_s %>
-								<h2 class="nome_user">Emerson Rocha</h2>
-								<h3 class="ed_perfil"><a href="#">(Editar)</a></h3>
+								<% if current_user.image.url.blank? %> <%= image_tag "imagens - site/padrao.jpg", class:"foto-padrao" %> <% else %> <%= image_tag current_user.image.url(:size), class:'foto-perfil' %><% end %>
+								<h7 class="name-user"><%= current_user.username %></h7>
+								<h3 class="ed_perfil"><a href="" class="editar"><%= link_to "(Editar)", edit_user_registration_path, class:"editar" %> </a></h3> 
 							</div>
 						</div>
 					</div>

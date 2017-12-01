@@ -68,7 +68,8 @@
 }
 
 .name-user{
-	margin-top:15px;
+	margin-top:20px !important;
+
 }
 .container div {
 	margin-left: 6px !important;
@@ -143,6 +144,14 @@ article ul li div {
 .m_perfil{
 	width: 175px;
 }
+.foto-perfil{
+	margin-left: 1px;
+}
+
+.foto-padrao{
+	width: 130px;
+
+}
 
 .m_contatos{
 	width: 175px;	
@@ -153,14 +162,18 @@ article ul li div {
 }
 .ed_perfil{
 	text-align: right;
+	height: 25px !important; 
+
 }
-.ed_perfil a {
-	font-size: 9px;
-	color: #FF6347;
+.editar {
+	font-size: 10px;
+	color: #FF6347 !important;
+	margin-bottom: 2px !important;
+	text-decoration:none !important;
 }
-.ed_perfil a:hover{
+.editar:hover {
 	background-color:transparent !important;
-	text-decoration:none;
+	text-decoration:none !important;
 	color: #800000;
 }
 

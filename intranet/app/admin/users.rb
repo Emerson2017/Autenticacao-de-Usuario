@@ -21,7 +21,6 @@ ActiveAdmin.register User do
         	'Técnico', 'Financeiro', 'Diretoria', 'Visitante'], :label => 'Perfil'
         f.input :filial, as: :select, :collection => ['Rio De Janeiro, RJ', 'Manaus, AM', 'Vitória, ES']
         f.input :nascimento, :as => :date_time_picker,  datepicker_options: { min_date:  " 2013-10-8 " ,         max_date:  " + 3D " } 
-        f.input :image
       end
       f.actions
     end
