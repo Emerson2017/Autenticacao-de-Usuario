@@ -69,6 +69,7 @@
 
 .name-user{
 	margin-top:20px !important;
+	font-size: 11px;
 
 }
 .container div {
@@ -153,6 +154,11 @@ article ul li div {
 
 }
 
+.foto-padrao2{
+	width: 30px;
+
+}
+
 .m_contatos{
 	width: 175px;	
 }
@@ -163,6 +169,10 @@ article ul li div {
 .ed_perfil{
 	text-align: right;
 	height: 25px !important; 
+	width: 40px;
+	margin-left: 100px;
+	position: absolute;
+	top: 380px;
 
 }
 .editar {
@@ -303,10 +313,16 @@ article ul li div {
 
 /----botões---/
 
+
+
 .btn1{
 	position: absolute !important;
 	top: 1900px !important;
 
+}
+
+.btn1:hover{
+	background-color: transparent !important;
 }
 
 
@@ -331,7 +347,7 @@ article ul li div {
 
 .btn-crud:hover{
 	background-color: transparent !important;
-	text-decoration: none;
+	text-decoration: none !important;
 	color: white !important;
 }
 
@@ -391,6 +407,9 @@ color: #008B8B;
 
 .div_texto{
 	margin-left: 20px;
+}
+.table{
+	color: #696969 !important;
 }
 
 .table-atividades{

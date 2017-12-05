@@ -1,23 +1,11 @@
 ActiveAdmin.register ControleAcesso do
 	permit_params [:grupo, :Noticium]
 
-
-
-
-  controller do
-    def i
-      @noticia = Noticium.all
-      @mural_atividades = MuralAtividade.all
-      @minhas_atividades = MinhasAtividade.all
-    end
-  end
-
+  
 		index do
 		column :grupo
 		actions
 	end
-
-
 	
 	 form do |f|
     f.inputs "Controle de Acesso" do
@@ -53,3 +41,6 @@ ActiveAdmin.register ControleAcesso do
       end
 
 end
+
+# ERRO: Os métodos delete, create, read, edit, não estão sendo chamados quando os checkbox são selecionados.
+# Dessa forma o controle de acesso não está ocorrendo.
