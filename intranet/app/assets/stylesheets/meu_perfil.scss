@@ -1,0 +1,24 @@
+// Place all the styles related to the meu_perfil controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.div-perfil{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.perfil{
+	width: 600px !important;
+	margin-top: 100px;
+}
+
+.minha-foto{
+	margin-top: 70px !important;
+}
+.titulo-perfil{
+	margin-top: 50px !important;
+}
+

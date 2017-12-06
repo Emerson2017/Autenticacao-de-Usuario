@@ -1,0 +1,21 @@
+<section>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<div class="titulo-perfil" > <h2>Meu Perfil</h2></div>
+	<div class="minha-foto"><% if current_user.image.url.blank? %> <%= image_tag "imagens - site/padrao.jpg", class:"foto-padrao" %> <% else %> <%= image_tag current_user.image.url(:size), class:'foto-perfil' %><% end %></div>
+	<div class="div-perfil" >
+		<div class="perfil">
+			Email: <%= current_user.email %>
+			<hr>
+			Perfil: <%= current_user.Setor %>
+			<hr>
+			Filial: <%= current_user.filial %>
+			<hr>
+			Nome Completo: <%= current_user.nome_completo %>
+			<hr>
+		</div>
+	</div>
+	<div>
+		<%= link_to "Voltar", site_index_path %>
+	</div>
+
+</section>

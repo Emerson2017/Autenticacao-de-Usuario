@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :noticia
   resources :site
   devise_for :users
-  resources :editar_perfil
+  resources :meu_perfil
 
 
 
