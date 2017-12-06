@@ -14,6 +14,7 @@
 
 .btn{
 	color:white !important;
+	text-decoration: none !important;
 
 }
 
@@ -28,10 +29,15 @@ table{
 
 .home{
 	color:white !important;
+	text-decoration: none !important;
 }
 
 .home:hover{
 	background-color: transparent !important;
 	text-decoration: none;
 	color: white !important;
+}
+
+.new_atividade{
+	text-decoration: none !important;
 }

@@ -25,7 +25,7 @@ table{
 
 .inserir-minha-atividade{
 	color: white !important;
-
+	text-decoration: none !important;
 }
 
 .inserir-minha-atividade:hover{
@@ -33,3 +33,8 @@ table{
 	text-decoration: none;
 	color: white !important;
 }
+
+th{
+	background-color: #696969 !important;
+}
+

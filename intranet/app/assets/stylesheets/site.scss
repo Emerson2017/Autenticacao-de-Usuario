@@ -4,7 +4,7 @@
 
 /*--------edição geral e navegação----------*/
 
-a:hover {
+.nav-link:hover {
 	background-color: transparent !important;
 }
 
@@ -284,6 +284,11 @@ article ul li div {
 	overflow:auto;
 
 }
+
+.th-site{
+	background-color: #A9A9A9 !important;
+}
+
 
 .lista2 li{
 	margin: 9px;
