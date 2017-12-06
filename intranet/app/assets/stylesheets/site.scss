@@ -4,6 +4,10 @@
 
 /*--------edição geral e navegação----------*/
 
+a:hover {
+	background-color: transparent !important;
+}
+
 .btn-header{
 	height: 15px !important;
 	margin: 10px;
@@ -471,3 +475,25 @@ color: #008B8B;
 	margin: 9px;
 	background-color: white;
 }
+
+/*--------- FOOTER ----------*/
+
+footer {
+	background-color: #696969 !important;
+	font-family: Merriweather Sans;
+	text-align: center;
+
+}
+
+
+.logo-footer{
+	width: 200px;
+}
+
+.direitos{
+
+	color: white;
+	margin-top: 30px !important;
+
+}
+

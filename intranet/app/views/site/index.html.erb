@@ -9,6 +9,8 @@
 	    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,
 	    700italic" rel="stylesheet" type="text/css">
 
+	    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+
 	    <!-- Custom styles for this template -->
 	    <link href="css/landing-page.css" rel="stylesheet">
 
@@ -27,9 +29,9 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="#"> <%= link_to "Sair", destroy_user_session_path, method: :delete, class:"sair" %> </a>
+
               <h7><%= current_user.nome_completo %></h7> <% if current_user.image.url.blank? %> <%= image_tag "imagens - site/padrao.jpg", class:"foto-padrao2" %> <% else %> <%= image_tag current_user.image.url(:mine), class:'foto-perfil' %><% end %>
             </li>
-
           </ul>
         </div>
       </div>
@@ -260,7 +262,18 @@
 				</li>
 			</ul>
 		</article>
+
 	</section>
+
+	<footer>
+		<section>
+			<div><%= image_tag "imagens - site/logo2.gif", class: "logo-footer"%></div>
+		</section>
+		<section class="direitos">
+			<small>Direitos autorais &copy; 2017. Todos os direitos reservados.</small><br>
+			<small>Av. Santos Dumont, 2456 - Sala 206 - Aldeota, Fortaleza - CE, 60125-070</small>
+		</section>
+	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
